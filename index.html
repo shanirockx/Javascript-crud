@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Listing</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="myform">
+        <h2>Add User</h2>
+        <form id="form" class="regForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+
+          <label for="phone">PhoneNo</label>
+          <input type="tel" id="phone" />
+
+          <label for="address">Address</label>
+          <input type="text" id="address" />
+
+          <input type="radio" id="male" name="gender" value="Male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="Female" />
+          <label for="female">Female</label>
+
+          <div class="buttons">
+            <button type="button" onclick="addOnClick();">Add</button>
+
+            <input type="reset" id="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+      <table id="myTable">
+        <h2>User List</h2>
+        <button class="gender" type="button" id="maleId" onclick="maleData()">
+          Male Data
+        </button>
+        <button
+          class="gender"
+          type="button"
+          id="femaleId"
+          onclick="femaleData()"
+        >
+          Female Data
+        </button>
+      </table>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
